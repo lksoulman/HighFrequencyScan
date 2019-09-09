@@ -1,0 +1,22 @@
+{if SQLServer}
+select 'drop table '+tblname + ';'
+from (
+	select name as tblname , left(right(name, len(name)-len('_TBLPREFIX__')),8) as tdate
+	from sys.objects where [type] = 'U' and name like '_TBLPREFIX__20%'
+	) A
+where tdate < '_YMD_'
+{endif}
+
+{if MySQL}
+
+
+select CONCAT('DROP TABLE IF EXISTS ',TABLE_NAME) as stmt from 
+(
+	select TABLE_NAME,  left(right(TABLE_NAME, LENGTH(TABLE_NAME)-LENGTH('_TBLPREFIX__')),8) as TDATE
+	FROM information_schema.TABLES 
+	where TABLE_NAME LIKE '_TBLPREFIX_%'
+) as A
+where A.TDATE < '_YMD_'
+
+
+{endif}

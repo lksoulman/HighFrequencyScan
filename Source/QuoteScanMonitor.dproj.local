@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>1899-12-30 00:00:00.000.258,C:\Allen\SVN\AliSVN\QuoteService\Source\Common\uDES.pas=C:\Allen\SVN\AliSVN\QuoteService\Source\高频扫描入库\Unit1.pas</Transaction>
+  </Transactions>
+	<ProjectSortOrder AutoSort="0" SortType="0">
+    <File Path="..\..\Source"/>
+    <File Path="..\Common"/>
+    <File Path="..\Common\uQuote2DB.pas"/>
+    <File Path="..\Common\uQuoteFile.pas"/>
+    <File Path="..\Common\uQuoteBroadcast.pas"/>
+    <File Path="..\Common\uQuote2MySQL.pas"/>
+    <File Path="..\Common\uFrmDBLinkCfg.pas"/>
+    <File Path="..\Common\uFrmDBLinkCfg.dfm"/>
+    <File Path="..\Common\uDBSync.pas"/>
+    <File Path="..\Common\uSyncDefine.pas"/>
+    <File Path="..\Common\uDES.pas"/>
+    <File Path="..\Common\uQuoteScanPlugin.pas"/>
+    <File Path="..\Common\uSaveBinary.pas"/>
+    <File Path="..\Common\uAlarm.pas"/>
+    <File Path="..\Common\uKafkaPlug.pas"/>
+    <File Path="Script"/>
+    <File Path="Script\BUILD_RQTableList.txt"/>
+    <File Path="Script\BUILD_TBL.txt"/>
+    <File Path="Script\DROP_HISTBL.txt"/>
+    <File Path="Script\GET_BUFFER_REC.txt"/>
+    <File Path="Script\INIT_TBL_EMPTY.txt"/>
+    <File Path="QuoteScanGUI.pas"/>
+    <File Path="QuoteScanGUI.dfm"/>
+    <File Path="uFrmConfig.pas"/>
+    <File Path="uFrmConfig.dfm"/>
+    <File Path="uFrmFileInfo.pas"/>
+    <File Path="uFrmFileInfo.dfm"/>
+  </ProjectSortOrder>
+</BorlandProject>

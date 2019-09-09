@@ -1,0 +1,37 @@
+﻿{
+  "ConnectString": "Provider=SQLNCLI11.1;Integrated Security=SSPI;Persist Security Info=False;User ID=\"\";Initial Catalog=FLYFOX;Data Source=.;Initial File Name=\"\";Server SPN=\"\"",
+  "Files": [
+    {
+      "Path": ".\\MKTDT00.TXT",
+      "Level": 5,
+      "StartTime": "09:00:00",
+      "StopTime": "23:55:00",
+      "Inspection": "000001,000300",
+	  "MonitorInterval":10,
+	  "AlarmURL":"http://localhost:35276/sms?context=testtesttesttest"
+    },
+    {
+      "Path": ".\\SJSHQ.DBF",
+      "Level": 5,
+      "StartTime": "09:00:00",
+      "StopTime": "23:55:00",
+      "Inspection": "000001,399300",
+	  "MonitorInterval":10,
+	  "AlarmURL":"http://localhost:35276/sms?context=testtesttesttest"
+    }	
+  ],
+  
+  "Broadcast": {
+    "Enable": True,
+    "Port": 9955
+  },
+  
+  "SMTP": {
+    "Host": "127.0.0.1",
+    "Port": 25,
+    "UserName": "xiaoming",
+    "Password": "888888",
+	"From":"alarm@gildata.com",
+	"Subject":"Level1行情接收异常"
+  }
+}

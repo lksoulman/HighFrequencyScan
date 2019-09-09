@@ -1,0 +1,37 @@
+﻿{
+  "ConnectString":"Provider=SQLNCLI11.1;Persist Security Info=False;User ID=zhenzy;Password=123;Initial Catalog=RAWDB;Data Source=10.1.8.249;",
+  "Files":[
+    {
+      "Path":".\\mktdt00.txt",
+      "Level":5,
+      "StartTime":"09:00:00",
+      "StopTime":"19:50:00",
+      "SplitMinute":3
+    },
+    {
+      "Path":".\\FUND_NB.DBF",
+      "Level":5,
+      "StartTime":"09:00:00",
+      "StopTime":"19:50:00",
+      "SplitMinute":3
+    },
+    {
+      "Path":".\\FUND_B.DBF",
+      "Level":5,
+      "StartTime":"09:00:00",
+      "StopTime":"19:50:00",
+      "SplitMinute":3
+    }
+  ],
+  "Broadcast":{
+    "Enable":true,
+    "Port":9905
+  },
+  "DB":{
+    "Host":"192.168.99.100",
+    "Port":3306,
+    "UserName":"root",
+    "Password":"",
+    "Database":"GPSJ"
+  }
+}

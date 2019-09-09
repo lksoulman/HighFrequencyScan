@@ -1,0 +1,15 @@
+﻿{
+    "SRC": "999",
+    "MSG_ID": "#MSG_ID",
+    "SEND_DATE": #SendDate,
+    "SEND_TIME": #SendTime,
+    "MSG_TYPE": "KH_OPENSTATE",
+    "MSG_SUBTYPE": "FUND_RQ",
+    "TARGET": ["05", "19"],
+    "CONTENT": {
+        "Code": "#CODE",
+        "ABBR": "#ABBR",
+        "NewestPrice": "#NewestPrice",
+        "MarketTime": "#MarketTime"
+    }
+}

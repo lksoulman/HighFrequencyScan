@@ -1,0 +1,24 @@
+{if SQLServer}
+if not exists(select * from sysobjects where [name]='RQTableList' and xtype = 'U')
+begin
+	CREATE TABLE [RQTableList](
+	TableName varchar(100),
+	CreateTime datetime,
+	Tabletype varchar(20),
+	TableID int identity primary key
+	);
+	CREATE UNIQUE INDEX IX_RQTableList_GILDATA ON RQTableList (TableName) WITH (IGNORE_DUP_KEY = ON);
+end
+{endif}
+
+{if MySQL}
+CREATE TABLE IF NOT EXISTS `RQTableList` 
+(
+  `TableID` int(11) NOT NULL AUTO_INCREMENT,
+  `TableName` varchar(100) DEFAULT NULL,
+  `CreateTime` datetime DEFAULT NULL,
+  `TableType` varchar(20) DEFAULT NULL,
+  PRIMARY KEY (`TableID`),
+  UNIQUE KEY `IDX_RQTABLELIST` (`TableName`)
+) ;
+{endif}

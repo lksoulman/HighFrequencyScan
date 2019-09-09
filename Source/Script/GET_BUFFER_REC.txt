@@ -1,0 +1,43 @@
+{if SQLServer}
+SELECT TOP 0 [Auction]
+	,[MarketTime]
+	,[Time]
+	,[Code]
+	,[Abbr]
+	,[Prev]
+	,[Open]
+	,[High]
+	,[Low]
+	,[Last]
+	,[Close]
+	,[Volume]
+	,[Value]
+	,[DealCnt]
+	,[PE1]
+	,[PE2]
+	,[BuyPrice1]
+	,[BuyPrice2]
+	,[BuyPrice3]
+	,[BuyPrice4]
+	,[BuyPrice5]
+	,[BuyVolume1]
+	,[BuyVolume2]
+	,[BuyVolume3]
+	,[BuyVolume4]
+	,[BuyVolume5]
+	,[SellPrice1]
+	,[SellPrice2]
+	,[SellPrice3]
+	,[SellPrice4]
+	,[SellPrice5]
+	,[SellVolume1]
+	,[SellVolume2]
+	,[SellVolume3]
+	,[SellVolume4]
+	,[SellVolume5]
+	FROM [TBL_EMPTY];
+{endif}
+
+{if MySQL}
+select * from TBL_EMPTY limit 0;
+{endif}

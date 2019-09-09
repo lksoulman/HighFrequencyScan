@@ -1,0 +1,16 @@
+内网测试FTP 10.102.0.60   用户名njsn_zhen    密码：gildata@123456   端口  221
+
+
+remote://10.80.115.110
+User:Administrator
+Pass:Hundsun@sn
+
+ftp://10.80.115.110:221
+ftp://47.97.0.33:221(外网)
+username:ftpuser
+password:B133k38Y
+
+
+ftp://120.55.139.252:6221
+username:ftpuser2
+password:X7C0MfmH

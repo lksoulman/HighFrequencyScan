@@ -1,0 +1,10 @@
+配置文件:config.json
+本文件存储了程序的必要设置信息，以JSON格式存储。各配置项详细说明如下：
+Files：存储扫描目标文件数组
+	Path：目标文件存储路径
+	Level：指定行情文件的LEVEL档位（暂不起作用）
+	StartTime：启动扫描时间
+	StopTime：停止扫描时间
+	Inspection：侦测目标证券代码，如有多个请以逗号分隔
+	MonitorInterval：行情更新超时阈值，单位：秒
+	AlarmURL：报警URL地址，当检测到更新超时，系统将自动调用此URL

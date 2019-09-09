@@ -4,7 +4,7 @@
         <ProjectVersion>16.1</ProjectVersion>
         <MainSource>QuoteScanMonitor.dpr</MainSource>
         <Base>True</Base>
-        <Config Condition="'$(Config)'==''">Debug</Config>
+        <Config Condition="'$(Config)'==''">Release</Config>
         <AppType>Application</AppType>
         <FrameworkType>VCL</FrameworkType>
         <DCC_DCCCompiler>DCC32</DCC_DCCCompiler>
@@ -98,6 +98,7 @@
         <VerInfo_Keys>CompanyName=GILDATA;FileDescription=行情文件扫描工具;FileVersion=1.2.0.0;InternalName=;LegalCopyright=;LegalTrademarks=;OriginalFilename=;ProductName=;ProductVersion=1.0.0.0;Comments=</VerInfo_Keys>
     </PropertyGroup>
     <PropertyGroup Condition="'$(Cfg_1_Win64)'!=''">
+        <DCC_ExeOutput>..\run\debug\bin</DCC_ExeOutput>
         <VerInfo_Release>0</VerInfo_Release>
         <VerInfo_Locale>1033</VerInfo_Locale>
         <VerInfo_Keys>CompanyName=;FileDescription=;FileVersion=1.0.0.0;InternalName=;LegalCopyright=;LegalTrademarks=;OriginalFilename=;ProductName=;ProductVersion=1.0.0.0;Comments=</VerInfo_Keys>
@@ -111,6 +112,7 @@
         <DCC_DebugInformation>0</DCC_DebugInformation>
     </PropertyGroup>
     <PropertyGroup Condition="'$(Cfg_2_Win64)'!=''">
+        <DCC_ExeOutput>..\Run\Release\Bin</DCC_ExeOutput>
         <VerInfo_Release>0</VerInfo_Release>
         <VerInfo_Locale>1033</VerInfo_Locale>
         <DCC_Define>madExcept;DEBUG;$(DCC_Define)</DCC_Define>
@@ -232,9 +234,9 @@
                 <Platform value="Win64">True</Platform>
             </Platforms>
             <Deployment>
-                <DeployFile LocalName="..\..\..\..\FastTran\QuoteScanMonitor.exe" Configuration="Debug" Class="ProjectOutput">
+                <DeployFile LocalName="Script\BUILD_RQTableList.txt" Configuration="Debug" Class="ProjectFile">
                     <Platform Name="Win32">
-                        <RemoteName>QuoteScanMonitor.exe</RemoteName>
+                        <RemoteDir>.\</RemoteDir>
                         <Overwrite>true</Overwrite>
                     </Platform>
                 </DeployFile>
@@ -244,7 +246,7 @@
                         <Overwrite>true</Overwrite>
                     </Platform>
                 </DeployFile>
-                <DeployFile LocalName="Script\DROP_HISTBL.txt" Configuration="Debug" Class="ProjectFile">
+                <DeployFile LocalName="Script\GET_BUFFER_REC.txt" Configuration="Debug" Class="ProjectFile">
                     <Platform Name="Win32">
                         <RemoteDir>.\</RemoteDir>
                         <Overwrite>true</Overwrite>
@@ -256,13 +258,13 @@
                         <Overwrite>true</Overwrite>
                     </Platform>
                 </DeployFile>
-                <DeployFile LocalName="Script\BUILD_RQTableList.txt" Configuration="Debug" Class="ProjectFile">
+                <DeployFile LocalName="..\..\..\..\FastTran\QuoteScanMonitor.exe" Configuration="Debug" Class="ProjectOutput">
                     <Platform Name="Win32">
-                        <RemoteDir>.\</RemoteDir>
+                        <RemoteName>QuoteScanMonitor.exe</RemoteName>
                         <Overwrite>true</Overwrite>
                     </Platform>
                 </DeployFile>
-                <DeployFile LocalName="Script\GET_BUFFER_REC.txt" Configuration="Debug" Class="ProjectFile">
+                <DeployFile LocalName="Script\DROP_HISTBL.txt" Configuration="Debug" Class="ProjectFile">
                     <Platform Name="Win32">
                         <RemoteDir>.\</RemoteDir>
                         <Overwrite>true</Overwrite>

@@ -1,10 +1,10 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <BorlandProject>
 	<Transactions>
-    <Transaction>1899-12-30 00:00:00.000.258,C:\Allen\SVN\AliSVN\QuoteService\Source\Common\uDES.pas=C:\Allen\SVN\AliSVN\QuoteService\Source\高频扫描入库\Unit1.pas</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.258,C:\Allen\SVN\AliSVN\QuoteService\Source\高频扫描入库\Unit1.pas=C:\Allen\SVN\AliSVN\QuoteService\Source\Common\uDES.pas</Transaction>
   </Transactions>
 	<ProjectSortOrder AutoSort="0" SortType="0">
-    <File Path="..\..\Source"/>
+    <File Path="..\..\HighFrequencyScan"/>
     <File Path="..\Common"/>
     <File Path="..\Common\uQuote2DB.pas"/>
     <File Path="..\Common\uQuoteFile.pas"/>
